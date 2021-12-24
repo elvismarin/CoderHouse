@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKE AND ORDER</title>
+    <link rel="icon" href="../assets/logo.png">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+        <header class="header">
+            <img class="header__logo" src="../assets/logo.png" alt="Logo Parfait Pastry">
+
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li><a href="../index.html"> HOME</a></li>
+                    <li> <a href="products.html"> PRODUCTS</a></li>
+                    <li> <a href="gallery.html"> GALLERY</a></li>
+                    <li> <a href="about_us.html"> ABOUT US</a></li>
+                    <li><a href="#"> MAKE AN ORDER</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="contact">
+                <form action="#" method="get" enctype="text/plain">
+                    <fieldset>
+                        <legend> Contact information
+                            <div><label for="Name"> Full name </label>
+                                <input type="text" name="Name"></div>
+
+                            <div><label for="Phone_number">Phone number</label>
+                                <input type="number" name="Phone_number" min="0"></div>
+                        </legend>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend> Order information
+                            <div><label for="Product">Product</label>
+                                <select name="Product">
+                                    <option>Select your product</option>
+                                    <option value="cheesecake">Berries cheesecake</option>
+                                    <option value="chocotorta">Chocotorta</option>
+                                    <option value="chocolate_cake">Chocolate cake</option>
+                                    <option value="tiramisu">Tiramisu</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="Quantity">Quantity</label>
+                                <select name="Quantity">
+                                    <option>Qty</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+
+                            <div><label for="Any_comments?">Any comments?</label>
+                                <textarea></textarea>
+                            </div>
+                        </legend>
+                    </fieldset>
+                    <p>
+                        <input class="button__send" type="submit" value="SEND">
+                        <input class="button__delete" type="reset" value="DELETE ALL">
+                    </p>
+                </form>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <img class="footer__logo" src="../assets/logo.png">
+            <h3 class="footer__slogan"> It's time to get something sweet! </h3>
+
+            <section class="footer__redes">
+                <p class="footer__sec">FOLLOW US!</p>
+                <article><a href="https://www.instagram.com/parfait.reposteria/" target="_blank"> <img
+                            class="footer__item" src="../assets/logoinstagram.png" alt="Logo Instagram"> </a></article>
+                <article><a href="https://www.facebook.com/parfait.repostria/" target="_blank"> <img
+                            class="footer__item" src="../assets/logofacebook.png" alt="Logo Facebook"> </a></article>
+            </section>
+
+            <section class="footer__ordernow">
+                <p class="footer__sec">ORDER NOW!</p>
+                <article><a href="https://www.rappi.com.ar/restaurantes/124519-parfait-reposteria-microcentro"
+                        target="_blank"> <img class="footer__item" src="../assets/logorappi.png" alt="Logo Rappi">
+                    </a></article>
+                <article><a
+                        href="https://api.whatsapp.com/send?phone=5491122536980&app=facebook&entry_point=page_cta&fbclid=IwAR1pHzh93n9IaV0tzvILpH26JK5ecjmvZzjKFO-NJYt_UajSkJLEAp3USJ0"
+                        target="_blank"> <img class="footer__item" src="../assets/logowhatsapp.png" alt="Logo Whatsapp">
+                    </a></article>
+            </section>
+        </footer>
+</body>
+
+</html>
