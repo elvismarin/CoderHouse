@@ -27,8 +27,6 @@ nav ul a { text-decoration: none}
     padding: 50px 100px; 
     align-items: center; 
     justify-content: space-between;
-    grid-area: encabezado;
-    
 }
 
 .header__logo { 
@@ -51,24 +49,17 @@ nav ul a { text-decoration: none}
 
 .header__link { list-style: none;}
 
-.separador {
-    background-color: blueviolet; 
-    height: 1rem; 
-    border: none;
-}
 
-.main { 
+
+body { 
     background-color:#957DAD;
-    grid-area: cuerpo;
 }  
 
 .footer {
     display: flex; 
     align-items: center; 
     background-color: #E0BBE4 ; 
-    justify-content: space-between;
-    grid-area: pie;
-    
+    justify-content: space-between; 
 }
 
 .footer__logo {
@@ -98,23 +89,83 @@ nav ul a { text-decoration: none}
 
 /*ASPECTOS GENERALES*/
 
-.home__gallery {   
-    display: inline-block;
-    align-items: center;
-    justify-content: space-evenly;
-    
-}
-
 .section__hg {
-    grid-area: section__hg;
+    padding: 2rem;
 }
 
-.gallery__item { height: 20rem;}
+.hg__text {
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.grid__gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+
+}
+
+.gallery__item {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: width 3s;
+}
+
+.gallery__item:hover { 
+    width: 90%;
+}
+
+.gallery__item1 {
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start:1;
+    grid-row-end:3;
+}
+
+.gallery__item2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.gallery__item4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.gallery__item5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.gallery__item6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
 
 .prod__section {
     display: flex;
     align-items: center;
     justify-content:space-evenly;
+    height: 32vh;
+    margin-bottom: 6rem;
 }
 
 .hi__text {
@@ -129,15 +180,64 @@ nav ul a { text-decoration: none}
     text-align: center;
     background: violet;
     border-radius: 15px;
-    margin: 3rem;
-} 
+    height: 100%;
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: webkit-box-shadow: 11px 24px 46px -12px rgba(0,0,0,1);
+-moz-box-shadow: 11px 24px 46px -12px rgba(0,0,0,1);
+box-shadow: 11px 24px 46px -12px rgba(0,0,0,1);
+}
 
 .hi__image {
-    height: 7rem;
-    
+    height: 7rem;    
 }
 
 /*MAIN MENU*/
+
+.products__area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.cakes__area {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.slices__area {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cakes__img, .slices__img {
+    width: 15rem;
+    height: 20rem;
+    margin: 0.5rem;
+}
+
+.cakes__pr, .slices__pr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+/*PRODUCTS SECTION*/
 
 .gallery__text {
     color: violet;
@@ -149,6 +249,8 @@ nav ul a { text-decoration: none}
 .sec__gallery {
     display: inline-block;
 }
+
+.gal__item { width: 20rem; }
 
 /*GALLERY*/
 
@@ -234,7 +336,7 @@ color: red;
     }
 }
 
-@media only screen and ( min-width: 760px ) and ( max-width:1030px ) {
+@media only screen and ( min-width: 760px ) and ( max-width:768px ) {
 
     
     nav ul li {
