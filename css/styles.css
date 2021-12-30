@@ -5,19 +5,15 @@
 }
 
 nav ul li { 
-    list-style: none; 
-    margin-left: 1rem; 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; 
     font-size: 2rem;
-    background-color: white; 
-    border: white;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 nav ul a { text-decoration: none}
+
    
-.header {
+.bg__header {
     background-image: url(../assets/heroimagen.jpeg); 
     background-size: cover; 
     background-repeat: no-repeat; 
@@ -34,11 +30,7 @@ nav ul a { text-decoration: none}
     height: 200px;
 }
 
-.header__nav {
-        display: flex; 
-        align-items: center; 
-        justify-content: space-evenly;
-}
+
 
 .header__list { 
     display: flex;
@@ -48,12 +40,6 @@ nav ul a { text-decoration: none}
 }
 
 .header__link { list-style: none;}
-
-
-
-body { 
-    background-color:#957DAD;
-}  
 
 .footer {
     display: flex; 
@@ -193,6 +179,10 @@ box-shadow: 11px 24px 46px -12px rgba(0,0,0,1);
     height: 7rem;    
 }
 
+.ca__title {  font-size: 3rem; }
+.ca__subtitle { font-size: 1.8rem;}
+
+
 /*MAIN MENU*/
 
 .products__area {
@@ -292,7 +282,7 @@ color: red;
 .au__text {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
-    color: white;
+    color: purple;
     margin-left: 2rem;
     display: inline-block;
     line-height: 120%;

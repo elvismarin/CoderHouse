@@ -8,26 +8,44 @@
     <title>MAKE AND ORDER</title>
     <link rel="icon" href="../assets/logo.png">
     <link rel="stylesheet" href="../css/styles.css">
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
-        <header class="header">
-            <img class="header__logo" src="../assets/logo.png" alt="Logo Parfait Pastry">
 
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li><a href="../index.html"> HOME</a></li>
-                    <li> <a href="products.html"> PRODUCTS</a></li>
-                    <li> <a href="gallery.html"> GALLERY</a></li>
-                    <li> <a href="about_us.html"> ABOUT US</a></li>
-                    <li><a href="#"> MAKE AN ORDER</a></li>
-                </ul>
-            </nav>
-        </header>
-
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light nav bg__header">
+        <img src="../assets/logo.png" alt="Logo Parfait Pastry" width="200px" height="200">
+        <div class="container-fluid mt-3">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">PRODUCTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">GALLERY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about_us.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">MAKE AN ORDER</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
         <main class="main">
             <div class="contact">
-                <form action="#" method="get" enctype="text/plain">
+                <form class="border border-5" action="#" method="get" enctype="text/plain">
                     <fieldset>
                         <legend> Contact information
                             <div><label for="Name"> Full name </label>
@@ -66,11 +84,12 @@
                                 <textarea></textarea>
                             </div>
                         </legend>
-                    </fieldset>
-                    <p>
-                        <input class="button__send" type="submit" value="SEND">
-                        <input class="button__delete" type="reset" value="DELETE ALL">
-                    </p>
+                    </fieldset> 
+                        <p>
+                        <button  class="btn btn-success" type="submit" value="send">SEND</button>
+                        <button class="btn btn-warning" type="reset" value="DELETE ALL">DELETE ALL</button>
+                        </p>
+
                 </form>
             </div>
 
@@ -99,6 +118,9 @@
                     </a></article>
             </section>
         </footer>
+
+        <!-- Js de Bs -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
